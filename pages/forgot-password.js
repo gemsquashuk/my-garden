@@ -32,7 +32,7 @@ export default function ForgotPassword() {
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" style={{borderColor: '#1F782B'}} value={email} onChange={(event) => setEmail(event.target.value)} required/>
                                 <Form.Text className="text-muted">
-                                    Enter your email address and we'll send you a link to reset your password.
+                                    Enter your email address and we&apos;ll send you a link to reset your password.
                                 </Form.Text>
                             </Form.Group>
 
