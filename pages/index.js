@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import Navbar from "../components/Navbar";
 
@@ -18,7 +17,7 @@ export default function Home() {
             Welcome to My Online Garden!
         </h1>
           <div className="d-flex justify-content-center">
-              <p className="text-center" style={{fontSize: '1.5rem', fontWeight: 'bold', color: '#1F782B'}}>Sign In</p>
+              <p>This is the staging site for My Online Garden. Please feel free to explore the site and provide feedback.</p>
             </div>
       </main>
     </div>

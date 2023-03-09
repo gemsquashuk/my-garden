@@ -1,4 +1,6 @@
 import 'bootstrap/dist/css/bootstrap.min.css';
+import Link from 'next/link';
+import Image from "next/image";
 export default function Navbar() {
     return (
         <div>
@@ -8,18 +10,23 @@ export default function Navbar() {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarNav">
-                        <a className="navbar-brand" href="#">
-                            <img src="/logo-mg.png" alt="My Online Garden Logo" width="100" height="100"/>
-                        </a>
+                        <Link className="navbar-brand" href="/">
+                            <Image src={"/logo-mg.png"} alt={"My Online Garden Logo"} width={"100"} height={"100"}/>
+                        </Link>
                         <ul className="navbar-nav">
                             <li className="nav-item">
-                                <a className="nav-link active" aria-current="page" href="#">Home</a>
+                                <Link className="nav-link active" aria-current="page" href="/">Home</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">My Garden</a>
+                                <Link className="nav-link" href="#">My Garden</Link>
                             </li>
                             <li className="nav-item">
-                                <a className="nav-link" href="#">Community</a>
+                                <Link className="nav-link" href="#">Community</Link>
+                            </li>
+                        </ul>
+                        <ul className="navbar-nav ms-auto">
+                            <li className="nav-item">
+                                <Link className="nav-link" href="/login">Login</Link>
                             </li>
                         </ul>
                     </div>

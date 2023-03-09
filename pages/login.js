@@ -23,7 +23,7 @@ export default function Login() {
                                 <Form.Label>Email address</Form.Label>
                                 <Form.Control type="email" placeholder="Enter email" style={{borderColor: '#1F782B'}}/>
                                 <Form.Text className="text-muted">
-                                    We'll never share your email with anyone else.
+                                    We&apos;ll never share your email with anyone else.
                                 </Form.Text>
                             </Form.Group>
 
@@ -40,7 +40,7 @@ export default function Login() {
                             </Button>
 
                             <Form.Text>
-                                <a href="/signup">Don't have an account? Sign up here.</a>
+                                <a href="/signup">Don&apos;t have an account? Sign up here.</a>
                             </Form.Text>
                         </Form>
                     </div>
