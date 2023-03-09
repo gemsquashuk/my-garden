@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Link from "next/link";
 
 export default function ForgotPassword() {
     const [email, setEmail] = useState('');
@@ -41,7 +42,7 @@ export default function ForgotPassword() {
                             </Button>
 
                             <Form.Text>
-                                <a href="/login">Remembered your password? Sign in here.</a>
+                                <Link href="/login">Remembered your password? Sign in here.</Link>
                             </Form.Text>
                         </Form>
                     </div>

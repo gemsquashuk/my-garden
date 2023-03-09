@@ -1,6 +1,7 @@
 import { Button, Form } from 'react-bootstrap';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Link from "next/link";
 
 export default function Login() {
     return (
@@ -31,7 +32,7 @@ export default function Login() {
                                 <Form.Label>Password</Form.Label>
                                 <Form.Control type="password" placeholder="Password" style={{borderColor: '#1F782B'}}/>
                                 <Form.Text >
-                                    <a href="/forgot-password">Forgot your password?</a>
+                                    <Link href="/forgot-password">Forgot your password?</Link>
                                 </Form.Text>
                             </Form.Group>
 
@@ -40,7 +41,7 @@ export default function Login() {
                             </Button>
 
                             <Form.Text>
-                                <a href="/signup">Don&apos;t have an account? Sign up here.</a>
+                                <Link href="/signup">Don&apos;t have an account? Sign up here.</Link>
                             </Form.Text>
                         </Form>
                     </div>
