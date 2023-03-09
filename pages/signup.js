@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Button, Form } from 'react-bootstrap';
 import Head from 'next/head';
 import Navbar from '../components/Navbar';
+import Link from "next/link";
 
 export default function SignUp() {
     const [password, setPassword] = useState('');
@@ -74,7 +75,7 @@ export default function SignUp() {
                                 Sign Up
                             </Button>
                             <Form.Text>
-                                Already have an account? <a href="/login">Sign in here.</a>
+                                Already have an account? <Link href="/login">Sign in here.</Link>
                             </Form.Text>
                         </Form>
                     </div>
